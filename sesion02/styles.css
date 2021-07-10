@@ -1,0 +1,227 @@
+
+
+/* Reseteamos la página con valores por defecto */
+body {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+button {
+  margin: 0;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* NAV */
+header #nav-header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+header #nav-header ul li {
+  margin-right: 20px;
+}
+
+/* BANNER */
+header #banner {
+  background-image: url(https://png.pngtree.com/thumb_back/fh260/back_our/20200630/ourmid/pngtree-purple-dim-gradient-technology-background-image_342267.jpg);
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+header #banner div {
+  text-align: center;
+}
+
+header #banner div h1 {
+  margin-bottom: 10px;
+}
+
+/* SECTION TRANSITIONS */
+#transitions {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#transitions h2, #cards h2 {
+  margin-bottom: 10px;
+}
+
+#transitions p, #cards p {
+  margin-bottom: 16px;
+}
+
+#transitions #btn-container, #cards #card-container {
+  display: flex;
+  /* justify-content: space-around; */
+  /* justify-content: space-evenly; */
+  justify-content: space-between;
+  text-align: center;
+  width: 500px;
+}
+
+#transitions #btn-container div {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+#transitions #btn-container div button {
+  padding: 10px;
+  width: 100%;
+}
+
+#transitions #btn-container div:nth-child(1) {
+  background-color: lightcoral;
+}
+
+#transitions #btn-container div:nth-child(2) {
+  background-color: darkcyan;
+}
+
+#transitions #btn-container div:nth-child(3) {
+  background-color: khaki;
+}
+
+#transitions #btn-container div:nth-child(1) button {
+  border-radius: 8px;
+  border: 2px rgb(22, 98, 185) solid;
+  background-color: rgb(22, 98, 185);
+  color: white;
+  transition: 0.4s ease-in;
+}
+
+#transitions #btn-container div:nth-child(2) button {
+  border-radius: 8px;
+  background-color: darkcyan;
+  color: white;
+  transition: 0.3s ease-in;
+}
+
+#transitions #btn-container div:nth-child(3) button {
+  border-radius: 8px;
+  background-color: tomato;
+  color: white;
+}
+
+#transitions #btn-container div:nth-child(1) button:hover {
+  border: 2px rgb(22, 98, 185) solid;
+  background-color: white;
+  color: rgb(22, 98, 185);
+}
+
+#transitions #btn-container div:nth-child(2) button:hover {
+  box-shadow: 0px 4px 8px rgb(33, 33, 33)
+}
+
+#transitions #btn-container div:nth-child(3) button:hover + p {
+  animation-name: moveright;
+  animation-duration: 3s
+}
+
+@keyframes moveright {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-100px) scale(2) skewX(45deg);
+  }
+  
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* CARDS */
+#cards {
+  background-color: lightgray;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box {
+  background-color: salmon;
+  padding: 10px 20px 30px 0;
+  border: 3px black solid;
+  margin: 10px 80px 20px 40px;
+}
+
+.border {
+  border-bottom: 2px solid black;
+}
+
+#test {
+  /* color: royalblue; */
+  font-size: 48px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-style: inherit
+}
+
+.red {
+  color: red
+}
+
+/* #banner {
+  background-image: url(https://http2.mlstatic.com/D_NQ_NP_829583-MLM25889049298_082017-O.jpg);
+  padding: 10px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+} */
