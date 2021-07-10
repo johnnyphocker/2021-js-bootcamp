@@ -1,8 +1,15 @@
+/* @font-face se utiliza con fuentes descargadas */
+@font-face {
+  font-family: 'rysma';
+  src: url(../fonts/Love\ Rysma.ttf);
+}
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
 
 /* Reseteamos la página con valores por defecto */
 body {
   margin: 0;
+  font-family: 'Roboto';
 }
 
 ul {
