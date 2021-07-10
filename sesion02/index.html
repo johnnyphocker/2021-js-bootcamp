@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sesión 02</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
 </head>
 <body>
 
@@ -16,10 +18,10 @@
           <a href="#transitions">Botones</a>
         </li>
         <li>
-          <a href="">Tarjetas</a>
+          <a href="#cards">Tarjetas</a>
         </li>
         <li>
-          <a href="">Formulario</a>
+          <a href="#form">Formulario</a>
         </li>
       </ul>
     </nav>
@@ -54,10 +56,71 @@
       <h2>Tarjetas</h2>
       <p>Aquí aprenderemos a usar la propiedad position</p>
       <div id="card-container">
-        <div>
-          tarjeta 1
+        <div class="card1">
+          <div class="card-header">
+            <div>
+              <p>Appointment Request</p>
+              <p>12 Jan 2020, 8am - 10pm</p>
+            </div>
+            <div>
+              <i class="fas fa-filter"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="user-info">
+              <div>
+                <img src="https://clicknathan.com/wp-content/uploads/2013/07/avatar-2.jpg" alt="Avatar">
+                <p>Louis Patterson</p>
+              </div>
+              <div>
+                <i class="fas fa-info-circle"></i>
+              </div>
+            </div>
+            <div class="card-btns">
+              <button class="main-btn">Accept</button>
+              <button>Decline</button>
+            </div>
+          </div>
+        </div>
+        <div class="card2">
+          <a href="#">
+            <i class="fas fa-times"></i>
+          </a>
         </div>
       </div>
+    </section>
+    <section id="form">
+      <form>
+        <label>Escribe tu nombre</label>
+        <input type="text" placeholder="Nombre">
+        <br>
+        <label>Escribe tu apellído</label>
+        <input type="text" placeholder="Apellído">
+        <br>
+        <input type="email" placeholder="Email">
+        <br>
+        <input type="date">
+        <br>
+        <textarea cols="30" rows="10"></textarea>
+        <br>
+        <select>
+          <option>Elige tu nacionalidad</option>
+          <option>México</option>
+          <option>España</option>
+          <option>Colombia</option>
+        </select>
+        <br>
+        <input type="radio" value="F" name="gender"><span>Femenino</span>
+        <input type="radio" value="M" name="gender"><span>Masculino</span>
+        <br>
+        <input type="checkbox"><span>Correr</span>
+        <input type="checkbox"><span>Nadar</span>
+        <input type="checkbox"><span>Jugar</span>
+        <br>
+        <input type="password" placeholder="Password">
+        <br>
+        <input type="submit" value="Enviar">
+      </form>
     </section>
   </main>
 
@@ -66,5 +129,8 @@
   <footer>
     <div id="nav-footer"></div>
   </footer>
+
+
+  <script></script>
 </body>
 </html>

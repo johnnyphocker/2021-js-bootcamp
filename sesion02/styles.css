@@ -172,8 +172,104 @@ header #banner div h1 {
   align-items: center;
 }
 
+#cards #card-container {
+  display: flex;
+}
+
+#cards #card-container .card1, #cards #card-container .card2 {
+  background-color: white;
+  border-radius: 16px;
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  text-align: left;
+  margin-right: 16px;
+}
+
+#cards #card-container .card1 .card-header {
+  background: #2b82f5;
+  height: 60px;
+  font-size: 14px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+#cards #card-container .card1 .card-header p {
+  margin: 0;
+}
+
+#cards #card-container .card1 .card-body {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+}
+
+#cards #card-container .card1 .card-body .user-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+#cards #card-container .card1 .card-body .user-info div {
+  display: flex;
+  align-items: center;
+}
+
+#cards #card-container .card1 .card-body .user-info div img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+#cards #card-container .card1 .card-body .user-info div p {
+  margin: 0;
+}
+
+#cards #card-container .card1 .card-body .card-btns {
+  display: flex;
+}
+
+#cards #card-container .card1 .card-body .card-btns button {
+  border-radius: 50px;
+  padding: 6px 20px;
+  background-color:lightgray
+}
+
+#cards #card-container .card1 .card-body .card-btns .main-btn {
+  margin-right: 10px;
+  background-color: #2b82f5;
+  color: white;
+}
+
+#cards #card-container .card2 {
+  position: relative;
+}
+
+#cards #card-container .card2 .fa-times {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+#cards #card-container .card2 .fa-times:hover {
+  color: red;
+  transition: 0.3s ease-in;
+}
 
 
+/* FORMS */
+#form {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
