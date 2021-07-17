@@ -20,7 +20,7 @@ var MiNombre = 'Juan Pablo'; // pascalcase se utiliza por lo general cuando se c
 // %
 
 
-// OPERACIONES DE ASIGNACIÓN
+// OPERADORES DE ASIGNACIÓN
 
 // =
 // +=
@@ -37,7 +37,7 @@ total /= 4; // 3
 total **= 4; // 81
 
 
-// OPERACIONES DE COMPARACIÓN
+// OPERADORES DE COMPARACIÓN
 
 var a = 2;
 var b = 3;
@@ -53,7 +53,7 @@ var c = 5;
 // !== diferente que - modo estricto
 
 
-// OPERACIONES LÓGICOS
+// OPERADORES LÓGICAS
 
 // && (and)
 // || (or)
@@ -234,8 +234,8 @@ shopping_cart[1] = 'Assassin\'s creed';
 // shopping_cart.sort();
 
 let arr1 = ['manzana', 'pera', 'mango'];
-// let arr2 = ['tomate', 'lechuga', 'cilantro'];
-// let arr3 = arr1.concat(arr2);
+let arr2 = ['tomate', 'lechuga', 'cilantro'];
+let arr3 = arr1.concat(arr2);
 
 // let cart_sliced = shopping_cart.slice(1, 3);
 
@@ -254,17 +254,205 @@ let str = 'anitalavalatina';
 // arr1.includes('peras');
 
 
-
-
 // OBJETOS
+
+// propiedades y métodos (Son funciones dentro de objetos)
+// CRUD - CREATE, READ, UPDATE, DELETE
+
+let username = {
+  name: 'JP',
+  age: undefined,
+  city: 'CDMX',
+  email: 'jp@mail.com' // llave - valor => propiedad || método
+};
+
+username.name = 'Juan Pablo';
+username.country = 'México'; 
+username.country = 'España';
+
+delete username.age;
+
+let users = [];
+
+let user_adry = {
+  name: 'Adriana',
+  city: 'CDMX'
+};
+
+let user_lalo = {
+  name: 'Eduardo',
+  city: 'Madrid'
+};
+
+let user_beto = {
+  name: 'Alberto',
+  city: 'Madrid'
+};
+
+let user_jp = {
+  name: 'jp',
+  city: 'CDMX'
+};
+
+users.push(user_adry);
+users.push(user_lalo);
+users.push(user_beto);
+users.push(user_jp);
+
+users[3].gender = 'M';
+users[3].interests = ['Programar', 'Pasear', 'Leer'];
+users[3].interests.push('Dormir');
+users[3].interests.splice(1, 1, 'Pasear en bicicleta');
+
+
 // CONDICIONES
+
+// if - else if -else
+// switch
+
+let player = {
+  life: 4
+};
+
+// if (player.life <= 0) {
+//   console.log('Game Over');
+// } else {
+//   console.log('Sigue jugando');
+// };
+
+let month = 'jan';
+
+// if (month === 'jan') {
+//   console.log('Estamos en enero');
+// } else if (month === 'feb') {
+//   console.log('Estamos en febrero');
+// } else if (month === 'mar') {
+//   console.log('Estamos en marzo');
+// } else {
+//   console.log('Me rindo, no sé en qué mes estamos');
+// };
+
+// switch(month) {
+//   case 'jan':
+//     console.log('Estamos en enero');
+//     break;
+//   case 'feb':
+//     console.log('Estamos en febrero');
+//     break;
+//   case 'mar':
+//     console.log('Estamos en marzo');
+//     break;
+//   default:
+//     console.log('Me rindo, no sé en qué mes estamos');
+// };
+
+
 // LOOPS
+
+// for
+// while
+// do .. while
+// for .. of  // itera sobre arrays
+// for .. in  // itera sobre objetos
+
+// for (let i = 0; i < users.length; i++) {
+//   if (users[i].name === 'jp') {
+//     console.log('Te encontramos Juan Pablo');
+//   };
+// };
+
+// PAIR PROGRAMMING
+// Reversear un string usando el ciclo for
+
+let name_jp = 'Juan Pablo';
+let new_name_jp = '';
+// for (let i = 0; i < name_jp.length; i++) {
+//   console.log(name_jp[i]);
+// };
+
+// for (let i = name_jp.length - 1; i >= 0; i--) {
+//   new_name_jp += name_jp[i];
+// };
+
+let total_loop = name_jp.length - 1;
+
+// while (total_loop >= 0) {
+//   if (name_jp[total_loop] === 'u') {
+//     break;
+//   };
+//   new_name_jp += name_jp[total_loop];
+//   total_loop -= 1;
+// };
+
+// let i = 0;
+// do {
+//   console.log(i);
+//   i += 1;
+// } while (i > 9);
+
+// for (let item of users) {
+//   if (item.interests) {
+//     console.log(item.interests[2])
+//   };
+// };
+
+// let arr_2d = [
+//   [1,2,3,4,5],
+//   [11,2,3,4,5],
+//   [21,2,3,4,5],
+//   [31,2,3,4,5],
+//   [41,2,3,4,5],
+// ];
+
+// for (item in user_jp) {
+//   console.log(item); // Toma las llaves del objeto
+//   console.log(user_jp[item]); // Toma los valores de las llaves
+// };
+
+
 // FUNCIONES
+
+// terminología: parámetros y argumentos
+// Un parámetro va dentro de los paréntesis de una función declarada
+// Un argumento va dentro de los paréntesis de una función invocada
+
+function hello(user) {
+  console.log(`Hola ${user}`);
+}
+
+function sum(a, b) {
+  return a + b;
+};
+
+hello(users[3].name);
+let total_sum = sum(3, 5);
+
+
 // DOM
 
+document.title = 'Sesión 03 modificado desde JS';
+
+let h1 = '';
+
+let header = document.getElementById('header');
+let input = document.getElementById('input');
+
+header.style.color = 'white';
+header.style.backgroundColor = 'red';
+
+input.addEventListener('input', function(e) {
+  header.innerText = e.target.value;
+});
 
 
+let button = document.getElementById('button');
+let num1 = document.getElementById('num1');
+let num2 = document.getElementById('num2');
+let h2 = document.getElementById('h2');
 
-
-
+button.addEventListener('click', function() {
+  h2.innerText = parseInt(num1.value) + parseInt(num2.value);
+  num1.value = '';
+  num2.value = '';
+});
 
