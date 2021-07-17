@@ -7,6 +7,8 @@ var miNombre = 'Juan Pablo'; // camelcase
 var MiNombre = 'Juan Pablo'; // pascalcase se utiliza por lo general cuando se crean 'classes'
 
 // NAN => Not A Number
+// undefined
+// null
 
 // OPERADORES ARITMÉTICOS
 
@@ -150,11 +152,115 @@ let text4 = 'hola' // scope global
 
 
 // MATH
-// ARREGLOS
+
+// Math.E        // returns Euler's number
+// Math.PI       // returns PI
+// Math.sqrt    // returns the square root
+// Math.LN2      // returns the natural logarithm of 2
+// Math.LN10     // returns the natural logarithm of 10
+// Math.LOG2E    // returns base 2 logarithm of E
+// Math.LOG10E   // returns base 10 logarithm of E
+
+// Math.sin
+// Math.cos
+// Math.tan
+
+// Math.random
+// Math.round
+// Math.ceil
+// Math.floor
+
+// PAIR PROGRAMMING
+// crear un slug en donde al final tenga un número random
+// y que ese número no contenga el '0.'
+
+// let random = Math.random().toString().slice(2)
+// console.log(slug + random) // Me regresa un número entre el 0 y el 1
+
+// if (Math.random() < 0.5) {
+//   console.log('Salió cara');
+// } else {
+//   console.log('Salió cruz');
+// };
+
+// console.log(Math.floor(3.5));
+// console.log(Math.ceil(3.5));
+// console.log(Math.round(3.5));
+// console.log(Math.sin(60));
+// console.log(Math.cos(60));
+// console.log(Math.tan(60));
+
+
+// ARREGLOS => ARRAYS
+
+// let names = ['Lalo', 'Beto', 'Adry', 'Jimena', 'Edwin'];
+let shopping_cart = ['Mario Kart'];
+
+
+// MÉTODOS DE ARREGLOS
+
+// push => sirve para añadir información al final del array
+// unshift => sirve para añadir información al principio del array
+// pop => sirve para remover información al final del array
+// shift => sirve para remover información al principio del array
+// splice
+
+shopping_cart.push('Altered beasts');
+shopping_cart.push('FIFA 2021');
+shopping_cart.push('Minecraft');
+shopping_cart.push('RE2', 'Horizont');
+
+shopping_cart.pop();
+
+shopping_cart.unshift('Days gone');
+shopping_cart.unshift('Tomb raider');
+shopping_cart.shift();
+
+shopping_cart.splice(1, 0, 'Mario 64')
+
+shopping_cart[1] = 'Assassin\'s creed';
+
+// length => Es un propiedad
+// sort
+// concat
+// slice
+// split
+// join - toString
+// reverse
+// indexOf
+// includes
+
+// shopping_cart.length;
+// shopping_cart.sort();
+
+let arr1 = ['manzana', 'pera', 'mango'];
+// let arr2 = ['tomate', 'lechuga', 'cilantro'];
+// let arr3 = arr1.concat(arr2);
+
+// let cart_sliced = shopping_cart.slice(1, 3);
+
+// let fruits = arr1.reverse();
+
+// PAIR PROGRAMMING
+// Crear una variable y verificar que esa variable sea un palíndromo
+
+let str = 'anitalavalatina';
+// str = str.replaceAll(' ', '');
+// str = str.replaceAll(',', '');
+
+// let isPal = str === str.split('').reverse().join('');
+
+// arr1.indexOf('peras');
+// arr1.includes('peras');
+
+
+
+
 // OBJETOS
 // CONDICIONES
 // LOOPS
 // FUNCIONES
+// DOM
 
 
 
