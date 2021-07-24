@@ -111,11 +111,11 @@ let ternary = vip ? 'puedes entrar al club' : 'No puedes entrar al club';
 // filter
 
 let filter_arr = users.filter((user, i) => user.gender === 'F');
-console.log(filter_arr);
+// console.log(filter_arr);
 
 
 // find
 
 let find_arr = users.find((user) => user.gender === 'F');
-console.log(find_arr);
+// console.log(find_arr);
 
