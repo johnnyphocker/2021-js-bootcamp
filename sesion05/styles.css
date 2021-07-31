@@ -1,0 +1,65 @@
+a {
+  text-decoration: none !important;
+  color: rgb(0, 0, 0);
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.banner {
+  background-color: red;
+  background-image: url(https://media.istockphoto.com/photos/blue-abstract-background-or-texture-picture-id1138395421?k=6&m=1138395421&s=612x612&w=0&h=bJ1SRWujCgg3QWzkGPgaRiArNYohPl7-Wc4p_Fa_cyA=);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.h-500 {
+  height: 500px;
+}
+
+.vh-50 {
+  height: 50vh;
+}
+.vh-75 {
+  height: 75vh;
+}
+.vh-25 {
+  height: 25vh;
+}
+
+.max-h-16 {
+  max-height: 16rem; /* Cada 'rem' equivale a 16px por defecto */
+}
+
+.btn-red {
+  background-color: red;
+  color: white;
+}
+
+.btn-red:hover {
+  background-color: darkred;
+  color: white;
+}
+
+.bg-coffee {
+  background-image: url(https://wallpaperaccess.com/full/3559953.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-primary-light {
+  background-color: #efede8;
+}
+
+form {
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  form {
+    width: 24rem;
+  }
+}
