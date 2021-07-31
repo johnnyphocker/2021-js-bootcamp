@@ -33,6 +33,10 @@ a {
   max-height: 16rem; /* Cada 'rem' equivale a 16px por defecto */
 }
 
+.h-12 {
+  max-height: 12rem; /* Cada 'rem' equivale a 16px por defecto */
+}
+
 .btn-red {
   background-color: red;
   color: white;
@@ -54,7 +58,15 @@ a {
   background-color: #efede8;
 }
 
-form {
+.top-15 {
+  top: 15px;
+}
+
+.left-15 {
+  left: 15px;
+}
+
+/* form {
   width: 100%;
 }
 
@@ -62,4 +74,4 @@ form {
   form {
     width: 24rem;
   }
-}
+} */
