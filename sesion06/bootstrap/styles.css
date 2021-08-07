@@ -1,0 +1,30 @@
+.h-200 {
+  height: 200px;
+}
+
+.bg-light-gray {
+  background-color: lightgray;
+}
+
+.bg-salmon {
+  background-color: lightsalmon;
+}
+
+.bg-peach {
+  background-color: peachpuff;
+}
+
+.box {
+  background-color: gray;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-height: 1100px) {
+  header > section {
+    height: 400px
+  }
+  footer > div {
+    height: 400px
+  }
+}
