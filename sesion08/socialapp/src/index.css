@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .btn {
+    @apply text-white px-4 py-2 rounded cursor-pointer
+  }
+  .btn-main {
+    @apply bg-main
+  }
+  .btn-secondary {
+    @apply bg-secondary
+  }
+  .card {
+    @apply p-4 rounded shadow mb-4 bg-white
+  }
+}
