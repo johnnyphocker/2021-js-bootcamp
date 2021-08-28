@@ -27,7 +27,7 @@ class Home extends Component {
     return (
       <Container className='bg-main_light px-8'>
         <Section className='mb-4 py-4'>
-          <h1 className='mb-4'>Lista de posts</h1>
+          <h1 className='mb-4'>Lista de posts desde sesión09</h1>
           <div className='grid grid-cols-3 gap-4'>
             {
               !this.state.posts.length ? (
