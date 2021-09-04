@@ -17,8 +17,8 @@ class Home extends Component {
     db.collection('posts').get().then(snapshot => {
       snapshot.forEach(doc => {
         posts = [...posts, {...doc.data(), id: doc.id}]
-        this.setState({ posts });
       })
+      this.setState({ posts });
     }).catch(err => console.error(err.message));
   }
 
